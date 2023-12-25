@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaman Tüneli</title>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Icon-->
+  <link rel="icon" href="icon/favicon.ico">
+</head>
+<body class="light"  id="themeBody">
+
+  <!--Ana Sayfa-->
+  <section class="main_page">
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo-nav" src="images/Logo1.jpg" alt="Zaman Tüneli LogoS"></a>
+        <p class="saat" id="clock"></p>
+      
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Featured">Öne Çıkanlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="urunler.html">Ürünler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="yorumlar.html">Yorumlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ıletisim.html">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sss.html">SSS</a>
+            </li>
+          </ul>
+
+          <div class="social_icon">  
+            <ul>
+              <li>
+                <i class="bi bi-brightness-high" id="theme-toggle"></i>
+              </li>
+              <li>
+                <i class="bi bi-bag" onclick="toggleModel();"></i>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="main" id="Home">
+      <div class="main_tag">
+        <h1><span>HOŞGELDİNİZ</span><br>ZAMAN TÜNELİ'NDE TARİHİ KEŞFEDİN!</h1>
+        <p>
+            Sizleri tarihle dolu bir serüvene davet etmekten büyük mutluluk duyuyoruz! Zaman Tüneli, geçmişin derinliklerine bir yolculuk yapma arzusuyla kurulmuş, tarihseverlere kapılarını açan bir platformdur.
+            <br>
+            Her sayfasında bir hikaye, her kitabında bir zaman dilimi bulunan Zaman Tüneli, tarih tutkunlarına unutulmaz deneyimler sunmayı amaçlar. 
+            Sitemizdeki zengin koleksiyon, antik uygarlıklardan günümüze kadar uzanan bir tarih panorama sunar. 
+            Politika, sanat, bilim, kültür ve daha birçok alanda yazılmış kitaplar aracılığıyla, geçmişin izini sürmeye hazır olun.
+        </p>
+        <a href="#Featured" class="main_btn btn">Daha Fazla</a>
+      </div>
+
+      <div class="main_img">
+        <img src="images/xp.png">
+      </div>
+    </div>
+  </section>
+
+
+  <!--Servisler-->
+  <div class="row" style="margin-top: 16rem;">
+    <div class="col">
+      <div class="card light">
+        <div class="card-body">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h5 class="card-title">Hızlı Teslimat</h5>
+          <p class="card-text">
+            Zaman Tüneli'nden alışveriş yaparak, sadece tarihi değil, aynı zamanda hızlı teslimat avantajını da yaşayın. 
+            Geçmişin sayfalarını hızla açmak için Zaman Tüneli sizinle!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card light">
+        <div class="card-body">
+          <i class="fa-solid fa-headset"></i>
+          <h5 class="card-title">7/24 Canlı Destek</h5>
+          <p class="card-text">
+            7 gün 24 saat aktif olan canlı destek hattımızla, sorularınızı, sorunlarınızı veya alışverişle ilgili herhangi bir konuyu anında çözüme kavuşturmak için yanınızdayız.                
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card light">
+        <div class="card-body">
+          <i class="fa-solid fa-tag"></i>
+          <h5 class="card-title">Uygun Fiyatlar</h5>
+          <p class="card-text">
+            Zaman Tüneli olarak, tarih kitapları konusundaki tutkunuzu desteklemek adına rekabetçi fiyatlar sunuyoruz. 
+            Her bütçeye uygun seçeneklerle, tarihi keşfetmenin keyfini sürün. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card light">
+        <div class="card-body">
+          <i class="fa-solid fa-lock"></i>
+          <h5 class="card-title">Güvenli Ödeme</h5>
+          <p class="card-text">
+            Zaman Tüneli olarak müşteri güvenliğini her şeyin önünde tutuyoruz. 
+            Bu nedenle, alışverişlerinizde güvenliğinizden ödün vermemek adına çeşitli güvenlik önlemleri alıyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Hakkında-->
+  <div class="about"id="About">
+    <div class="about_image">
+        <img src="images/about.png">
+    </div>
+
+    <div class="about_tag">
+        <h1>Hakkımızda</h1>
+        <p>
+            Tarihi Keşfedin, Geçmişi Yaşayın!<br>
+            Tarih, insanlık hikayesinin temel taşlarından biridir.
+            Geçmişimizi anlamak, kültürler arası etkileşimleri keşfetmek ve dünya tarihindeki dönemleri incelemek, bize kendimizi ve dünyamızı daha iyi anlama fırsatı sunar.
+            İşte bu önemli keşfi desteklemek ve tarihseverlere unutulmaz bir yolculuk yaşatmak amacıyla Zaman Tüneli olarak yola çıktık.
+            Yola çıktığımız ilk andan itibaren bizimle beraber olan siz okurlarımıza hizmet vermekten mutluyuz.
+        </p>
+    </div>
+  </div>
+
+
+  <!--Öne Çıkanlar-->
+  <div class="featured_boks" id="Featured">
+    <h1>Öne Çıkanlar</h1>
+    <div class="featured_book_box">
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/nutuk.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Nutuk</h2>
+                <p class="writer">Mustafa Kemal Atatürk</p>
+                <p class="book_price">42,80₺<sub><del>49,90₺</del></sub></p>
+                <a class="f_btn" onclick="addToBasket('nutuk', 'Nutuk', 42.80, 'images/nutuk.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/sapiens.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Hayvanlardan Tanrılara Sapiens</h2>
+                <p class="writer">Yuval Noah Harrari</p>
+                <p class="book_price">150,00₺<sub><del></del></sub></p>
+                <a class="f_btn" onclick="addToBasket('sapiens', 'Hayvanlardan Tanrılara Sapiens', 150.00, 'images/sapiens.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/devleti_aliyye_1.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Devlet-i Aliyye I.</h2>
+                <p class="writer">Halil İnalcık</p>
+                <p class="book_price">65,00₺<sub><del>75,00₺</del></sub></p>
+                <a class="f_btn" onclick="addToBasket('devlet_aliyye_i', 'Devlet-i Aliyye I.', 65.00, 'images/devleti_aliyye_1.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/halil_inalcık_fsm.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Fatih Sultan Mehemmed Han</h2>
+                <p class="writer">Halil İnalcık</p>
+                <p class="book_price">212,50₺<sub><del></del></sub></p>
+                <a class="f_btn" onclick="addToBasket('fatih_sultan_mehmed_han', 'Fatih Sultan Mehmed Han', 212.50, 'images/halil_inalcık_fsm.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+        
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/cengizhan.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Cengiz Han</h2>
+                <p class="writer">Jack Weatherford</p>
+                <p class="book_price">86,00₺<sub><del>100,00₺</del></sub></p>
+                <a class="f_btn" onclick="addToBasket('cengiz_han', 'Cengiz Han', 86.00, 'images/cengizhan.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/türk_tarihi1.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Türklerin Tarihi</h2>
+                <p class="writer">İlber Ortaylı</p>
+                <p class="book_price">65,00₺<sub><del>75,00₺</del></sub></p>
+                <a class="f_btn" onclick="addToBasket('turklerin_tarihi', 'Türklerin Tarihi', 65.00, 'images/türk_tarihi1.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="images/bozkurt.jpg">
+            </div>
+
+            <div class="featurde_book_tag">
+                <h2>Bozkurt</h2>
+                <p class="writer">H. C. Armstrong</p>
+                <p class="book_price">118,60₺<sub><del>130,00₺</del></sub></p>
+                <a class="f_btn" onclick="addToBasket('bozkurt', 'Bozkurt', 118.60, 'images/bozkurt.jpg')">Sepete Ekle</a>
+            </div>               
+        </div>
+
+    </div>
+    <a href="urunler.html" class="btn btn-lg lbtn" role="button" aria-pressed="true">Tüm Ürünler</a>
+  </div>
+
+  <!--Sepet-->
+  <div class="basket_modal">
+    <div class="basket_items">
+        <i class="bi bi-x" onclick="toggleModel();"></i>
+        <h2 class="basket_title">Sepetim</h2>
+        <ul class="basket_list">
+        </ul>
+        <div class="basket_total">
+          <span class="fw-bold mb-3 fs-5">Total : 0</span>
+          <button id="openSurveyButton" onclick="openSurveyPopup()">Ödemeye Geç</button>
+        </div>
+    </div>
+  </div>
+
+  <div id="surveyPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeSurveyPopup()">&times;</span>
+        <form id="surveyForm">
+
+            <label for="address">Teslimat Adresiniz:</label>
+            <input class="teslimatAdresi" type="text" id="address" name="address" placeholder="Teslimat Adresiniz">
+
+            <label class="soruAnket" for="satisfaction">Sitemizde gezinirken yaşadığınız deneyimi değerlendirin.</label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+              <option value="very-satisfied">Çok İyi</option>
+              <option value="satisfied">İyi</option>
+              <option value="neutral">Orta</option>
+              <option value="dissatisfied">Kötü</option>
+              <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+
+            <label class="soruAnket" for="satisfaction">Zaman Tüneli'nin sunduğu tarih kitapları çeşitliliğini nasıl buldunuz?</label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+              <option value="very-satisfied">Çok İyi</option>
+              <option value="satisfied">İyi</option>
+              <option value="neutral">Orta</option>
+              <option value="dissatisfied">Kötü</option>
+              <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+
+            <label class="soruAnket" for="satisfaction">Web sitemizin kullanıcı dostu olduğunu düşünüyor musunuz?</label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+              <option value="very-satisfied">Çok İyi</option>
+              <option value="satisfied">İyi</option>
+              <option value="neutral">Orta</option>
+              <option value="dissatisfied">Kötü</option>
+              <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+
+            <label class="soruAnket" for="satisfaction">Sipariş sürecindeki hız ve güvenlikten memnun musunuz? </label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+              <option value="very-satisfied">Çok İyi</option>
+              <option value="satisfied">İyi</option>
+              <option value="neutral">Orta</option>
+              <option value="dissatisfied">Kötü</option>
+              <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+
+            <label class="soruAnket" for="satisfaction">Müşteri hizmetleri ile iletişim kurma sürecini değerlendirin.</label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+            
+            <label class="soruAnket" for="satisfaction">Siparişlerinizin zamanında ve güvenli bir şekilde size ulaştığını düşünüyor musunuz?</label>
+            <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+            </select>
+
+            <label for="address">Öneriniz.</label>
+            <input class="oneri" type="text" id="address" name="address" placeholder="Öneriniz." col="15" row="4">
+
+            <input class="sub-btn-anket" type="submit" value="Tamamla" onclick="clearBasket()">
+        </form>
+    </div>
+  </div>
+
+<div id="thanksPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeThanksPopup()">&times;</span>
+        <p>Alışverişiniz ve Ankete Katılımınız İçin Teşekkürler.</p>
+    </div>
+</div>
+
+  <!--Footer-->
+
+  <footer>
+    <div class="footer_main" id="Footer">
+      <div class="tag">
+        <img src="images/Logo1.jpg">
+        <p>
+          Merhaba! Zaman Tüneli olarak, geçmişin derinliklerine doğru bir yolculuğa çıkma arzusu taşıyan herkesi karşılamaktan mutluluk duyuyoruz.
+          Amacımız, tarihin zengin ve karmaşık dokusunu sizlere en etkileyici şekilde sunarak, geçmişin izlerini sürdürenleri bir araya getirmektir.
+        </p>
+      </div>
+
+      <div class="tag">
+        <h1>Hızlı Erişim</h1>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="#Featured">Öne Çıkanlar</a>
+        <a href="urunler.html">Ürünler</a> 
+        <a href="sss.html">Sıkça Sorulan Sorular</a> 
+      </div>
+
+      <div class="tag">
+        <h1>İletişim Bilgileri</h1>
+        <a href="ıletisim.html"><i class="fa-solid fa-phone"></i>+90 123 456 7890</a>
+        <a href="ıletisim.html"><i class="fa-solid fa-phone"></i>+90 124 567 8930</a>
+        <a href="ıletisim.html"><i class="fa-solid fa-envelope"></i>zamantuneli@gmail.com</a>  
+      </div>
+
+      <div class="tag">
+        <h1>Bizi Takip Edin</h1>
+        <div class="social_link">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>          
+    </div>
+    <p class="end">Furkan Kılıçsokan tarafından yapıldı.</p>
+  </footer>
+    
+
+
+
+  <!--Scripts-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+  <script>
+    //Saat
+function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+    const clock = document.getElementById('clock');
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+  
+  setInterval(updateClock, 1000);
+  updateClock(); 
+
+
+//Tema seçimi
+const themeToggle = document.getElementById('theme-toggle');
+const themeBody = document.getElementById('themeBody');
+
+themeToggle.addEventListener('click', () => {
+  themeBody.classList.toggle('dark');
+  const isDarkMode = themeBody.classList.contains('dark');
+  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+});
+  </script>
+</body>
+</html>

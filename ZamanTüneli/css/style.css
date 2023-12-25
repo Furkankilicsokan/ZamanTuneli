@@ -1,0 +1,709 @@
+*{
+    box-sizing: border-box
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+/*Navbar*/
+nav{
+    background-color: #F1E3C6;
+    height: 15%;
+}
+nav .logo-nav{
+    height: 5rem;
+}
+
+nav .saat{
+    font-size: 2em;
+    color: black;
+}
+
+.navbar .navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+nav .nav-item .nav-link:hover{
+    color: #bca37f;
+    font-size: large;
+}
+
+nav .social_icon i{
+    margin: 0 0.3rem;
+    font-size: 1.1rem;
+    color: black;
+}
+
+nav .social_icon i:hover{
+    color: #bca37f;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav .social_icon li{
+    position: relative;
+    list-style: none;
+    display: inline;
+}
+
+nav .collapse{
+    background-color: #F1E3C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+@media (max-width: 990px){
+    nav .social_icon li{
+        display: block;
+        margin-right: 5rem;
+    }
+}
+
+/*Ana Sayfa*/
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+    margin-top: 3.6rem;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 3.7rem;
+    top: 5rem;
+    left: 1.5rem;
+}
+
+section .main h1 span{
+    color: #F1E3C6;
+}
+
+section .main p{
+    width: 37.5rem;
+    text-align: justify;
+    line-height: 1.25rem;
+    position: relative;
+    top: 7.8rem;
+    left: 1.5rem;
+}
+
+section .main .main_tag .main_btn{
+    background: #F1E3C6;
+    padding: 0.6rem 1.25rem;
+    position: relative;
+    top: 12.5rem;
+    left: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+section .main .main_tag .main_btn:hover{
+    background-color: #bca37f;
+}
+
+section .main .main_img img{
+    width: 43.75rem;
+    position: relative;
+    top: 6.25rem;
+}
+
+@media (max-width: 1028px) {
+    
+    section .main{
+        display: block;
+        position: relative;
+        top: 10%;
+        margin-top: 3.6rem;
+    }
+    
+    section .main h1{
+        position: relative;
+        font-size: 3rem;
+        top: 5rem;
+        left: 1.3rem;
+    }
+    
+    section .main h1 span{
+        color: #F1E3C6;
+    }
+    
+    section .main p{
+        width: 90%;
+        line-height: 1.25rem;
+        position: relative;
+        top: 7.8rem;
+        padding-right: 0.6rem;
+    }
+    
+    section .main .main_tag .main_btn{
+        background: #F1E3C6;
+        padding: 0.6rem 1.25rem;
+        position: relative;
+        top: 12.5rem;
+        left: 1.5rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    section .main .main_img img{
+        width: 100%;
+        position: relative;
+        top: 13rem;
+    }
+    
+}
+
+/*Servisler*/
+
+.row{
+    padding: 0 10px;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 0 8px #F1E3C6;
+    padding: 15px 10px;
+    display: inline;
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .card-body{
+    height: 15rem;
+}
+
+.card i{
+    color: #F1E3C6;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h5{
+    margin-bottom: 10px;
+}
+
+
+.dark .card{
+    color: white;
+    background-color: #000;
+}
+
+/*Hakkımızda*/
+.about{
+    width: 100%;
+    height: auto;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_image img{
+    width: 50rem;
+}
+
+.about .about_tag h1{
+    font-size: 3rem;
+    position: relative;
+    bottom: 2.1rem;
+}
+
+.about .about_tag p{
+    line-height: 1.3rem;
+    width: 38rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1028px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 1.2rem;
+        display: block;
+    }
+
+    .about .about_image img{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .about_tag h1{
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about .about_tag p{
+        width: 75%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Öne Çıkanlar*/
+.featured_boks{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_boks h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.featured_boks .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px #bca37f;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+    height: 200px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+    font-size: large;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: #919191;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid #bca37f;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn:hover{
+    background-color: #F1E3C6;
+}
+.dark .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    color: white;
+    background-color: #000;
+}
+
+.dark .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn:hover{
+    background-color: #F1E3C6;
+    color: black;
+}
+
+.featured_boks .lbtn{
+    border: 2px solid #bca37f;
+    text-decoration: none;
+    color: #000;
+    width: 95%;
+    margin-left: 40px;
+}
+
+.featured_boks .lbtn:hover{
+    background-color: #F1E3C6;
+    color: #000;
+}
+
+.featured_boks .lbtn:active:focus{
+    background-color: #bca37f;
+    color: #000;
+}
+
+.dark .featured_boks .lbtn{
+    color: white;
+    background-color: #000;
+}
+
+.dark .featured_boks .lbtn:hover{
+    background-color: #F1E3C6;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #113946;
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb{
+    background: #bca37f;
+}
+
+/*Sepet*/
+.basket_modal{
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background-color: #80808050;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 250ms ease-in-out;
+}
+
+.basket_modal.active{
+    opacity: 1;
+    z-index: 2000;
+}
+
+.basket_items{
+    position: relative;
+    width: 0px;
+    background-color: #F1E3C6;
+    height: 100%;
+    float: right;
+    transition: all 250ms ease-in-out;
+}
+
+.basket_modal.active .basket_items{
+    width: 350px;
+}
+
+.basket_items .bi-x{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.basket_items .basket_title{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dark .basket_items .basket_title{
+    color: #000;
+}
+
+.basket_list{
+    list-style: none;
+    padding: 0 10px;
+    margin-top: 1.5rem;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.basket_list .basket_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.basket_items_info{
+    width: 150px;
+}
+
+.basket_items_info .book_name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dark .basket_items_info .book_name{
+    color: #000;
+}
+
+.basket_items_info .basket_price{
+    font-size: 16px;
+}
+
+.dark .basket_items_info .basket_price{
+    color: #000;
+}
+
+.basket_items_info .book_remove{
+    cursor: pointer;
+    color: gray;
+}
+
+.basket_item .book_count{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dark .basket_item .book_count .number_of_books{
+    color: #000;
+}
+
+.book_count .increase{
+    margin-right: 5px;
+}
+
+.book_count .decrease{
+    margin-left: 5px;
+}
+
+.book_count .increase, .decrease{
+    cursor: pointer;
+    color: #2c86a5;
+}
+
+.basket_total{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    align-items: center;
+    width: inherit;
+}
+
+.dark .basket_total{
+    color: #000;
+}
+
+.basket_total button{
+    width: 250px;
+    padding: 2px 20px;
+    border: 2px solid #bca37f;
+    text-decoration: none;
+    color: #000;
+}
+
+.dark .basket_total button{
+    color: white;
+    background-color: #000;
+}
+
+.basket_total button:hover{
+    background-color: #bca37f;
+}
+
+/*Anket*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2001;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F1E3C6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.popup .popup-content label{
+    display: block;
+}
+
+.soruAnket{
+    display: block;
+}
+
+.secenekler{
+    border-radius: 10px;
+    text-align: center;
+}
+
+.oneri{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+
+.teslimatAdresi{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sub-btn-anket{
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    background: #F1E3C6;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+    color: #000;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag i:hover{
+    color: #bca37f;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #113946;
+    margin-bottom: -16px;
+}
+
+@media (max-width: 1000px) {
+    footer{
+        width: 100%;
+        background: #F1E3C6;
+        margin-top: 1rem;
+    }
+    
+    footer .footer_main{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    
+    footer .footer_main .tag{
+        margin: 10px 0; 
+        text-align: center;
+        
+    }
+    
+    footer .footer_main .tag img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    footer .footer_main .tag p{
+        width: 15rem;
+        line-height: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

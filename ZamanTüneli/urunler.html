@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaman Tüneli</title>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="css/urunler.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Icon-->
+  <link rel="icon" href="icon/favicon.ico">
+</head>
+<body>
+    <section class="main_page">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo-nav" src="images/Logo1.jpg" alt="Zaman Tüneli LogoS"></a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">          
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Öne Çıkanlar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="urunler.html">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="yorumlar.html">Yorumlar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ıletisim.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sss.html">SSS</a>
+                </li>
+              </ul>
+    
+              <div class="social_icon">  
+                <ul>
+                  <li>
+                    <i class="bi bi-bag" onclick="toggleModel();"></i>
+                  </li>
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+        </nav>
+    </section>
+
+    <!--Store-->
+    <section class="store">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/nutuk.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Mustafa Kemal Atatürk</span><br>
+                <span class="fs-5 fw-bold">Nutuk</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Ey Türk gençliği! Birinci görevin, Türk bağımsızlığını, Türk Cumhuriyeti'ni sonsuza kadar korumak ve savunmaktır.</p>
+              <div>
+                <span class="price fw-bold fs-5">42,80₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">49,90₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('nutuk', 'Nutuk - Mustafa Kemal Atatürk', 42.80, 'images/nutuk.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/devleti_aliyye_4.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Devlet-i Aliyye - IV</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Devlet-i 'Aliyye'nin dördüncü cildi, Osmanlı Devleti'nin geçirdiği askeri ve mali dönüşümü mercek altına alarak başlıyor. 18. yüzyılda güç kazanan ayanların kurduğu düzene karşı merkezi otoritenin yeni yöntem arayışlarıyla devam ediyor.</p>
+              <div>
+                <span class="price fw-bold fs-5">140₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">179,90₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('devlet_aliyye_iv', 'Devlet-i Aliyye - IV', 140, 'images/devleti_aliyye_4.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/türk_tarihi1.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">İlber Ortaylı</span><br>
+                <span class="fs-5 fw-bold">Türklerin Tarihi</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Koca bir kavmin binlerce kilometreyi üç asır içinde geçtiğini düşünün. Bu, dünyayı değiştirmez de ne yapar? İşte Türkler dünyayı böyle değiştirdi. Bu sebeple, bizim hayali bir tarih ve kahramanlar üretmeye değil, yalnızca doğruyu öğrenmeye ihtiyacımız var.</p>
+              <div>
+                <span class="price fw-bold fs-5">65₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">75₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('turklerin_tarihi', 'Türklerin Tarihi - İlber Ortaylı', 65, 'images/türk_tarihi1.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/devleti_aliyye_1.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Devlet-i Aliyye - I</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Devlet-i 'Aliyye, Osmanlı tarihçiliğinin çağımızdaki en büyük isimlerinden Halil İnalcık'ın yarım yüzyılı aşan çalışmalarının bir ürünü. Eserin bu ilk cildi, Osmanlı Devleti'nin bir beylikten Orta-Doğu ve Balkanlar'ı hükmü altına alan güçlü ve köklü bir imparatorluk haline gelişine odaklanıyor.</p>
+              <div>
+                <span class="price fw-bold fs-5">65₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">75₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('devlet_aliyye_i', 'Devlet-i Aliyye - I', 65, 'images/devleti_aliyye_1.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/atilla.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Ian Hughes</span><br>
+                <span class="fs-5 fw-bold">Atilla - Hun İmparatoru</span><br>
+                </span>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Çoğu kişi Attila adına aşinadır ancak bu tarihsel figürün ardındaki hikayeyi bilen pek yoktur. 434 civarında Hun imparatoru olduktan sonra Attila yirmi yıl boyunca Avrupa tarihine damgasını vurmuş bir komutandır.</p>
+              <div>
+                <span class="price fw-bold fs-5">79,50₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">88,50₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('atilla_hun_imparatoru', 'Atilla - Hun İmparatoru', 79.50, 'images/atilla.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="dunyaTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/büyük_iskender.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Jona Lendering</span><br>
+                <span class="fs-5 fw-bold">Büyük İskender</span><br>
+                </span>
+              </div>
+              <span style="color: gray;">Dünya Tarihi</span>
+              <p class="book_description">UÇSUZ BUCAKSIZ BİR İMPARATORLUĞUN FİLOZOF HÜKÜMDARI: BÜYÜK İSKENDER.UÇSUZ BUCAKSIZ BİR İMPARATORLUĞUN FİLOZOF HÜKÜMDARI: BÜYÜK İSKENDER.</p>
+              <div>
+                <span class="price fw-bold fs-5">95,20₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">100₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('buyuk_iskender', 'Büyük İskender', 95.20, 'images/büyük_iskender.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="dunyaTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/napoleın.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Andrew Roberts</span><br>
+                <span class="fs-5 fw-bold">Napoleon Hayatı</span><br>
+              </div>
+              <span style="color: gray;">Dünya Tarihi</span>
+              <p class="book_description">Yoksul Ve Genç Bir Subaydan Görkemli Bir İmparatora Dönüşen Askeri Ve Siyasi Deha: Napoleon Ustalıkla kaleme alınan ve destansı bir hacme sahip olan bu kitap yazılma biçimiyle roman okuma tecrübesi sunuyor.</p>
+              <div>
+                <span class="price fw-bold fs-5">265₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">300₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('napoleon_hayati', 'Napoleon Hayatı', 265, 'images/napoleın.jpg')">Sepete Ekle</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/halil_inalcık_fsm.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Fatih Sultan Mehemmed Han</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">İki Karanın Sultanı, İki Denizin Hakanı, Kayser-İ Rum</p>
+              <div>
+                <span class="price fw-bold fs-5">212,50₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;"></span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('fatih_sultan_mehmed_han', 'Fatih Sultan Mehemmed Han', 212.50, 'images/halil_inalcık_fsm.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/devleti_aliyye_2.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Devlet-i Aliyye - II</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Halil İnalcık Devlet-i 'Aliyye'nin ilk cildinde, Osmanlı Devleti'nin bir beylikten güçlü ve köklü bir imparatorluğa dönüşümünün öyküsünü konu ederek geniş kitlelere ulaştı. Okuyucuların merakla beklediği ikinci cildin konusu, imparatorlukta padişahlık otoritesinin yok oluş sürecinde çeşitli odakların iktidarı ele geçirmek için verdiği mücadele.</p>
+              <div>
+                <span class="price fw-bold fs-5">73₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">85₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('devlet_aliyye_ii', 'Devlet-i Aliyye - II', 73, 'images/devleti_aliyye_2.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="dunyaTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/augustus.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Adrian Goldsworthy</span><br>
+                <span class="fs-5 fw-bold">Augustus: Roma'nın İlk İmparatoru</span><br>
+              </div>
+              <span style="color: gray;">Dünya Tarihi</span>
+              <p class="book_description">ROMA VATANININ BABASI: İLK İMPARATOR AUGUSTUS.</p>
+              <div>
+                <span class="price fw-bold fs-5">159,25₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;"></span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('augustus_roma_ilk_imparatoru', 'Augustus: Roma\'nın İlk İmparatoru', 159.25, 'images/augustus.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/bozkurt.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">H. C. Armstrong</span><br>
+                <span class="fs-5 fw-bold">Bozkurt</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Kitap, Atatürk’ün doğumundan 1932 senesine kadar olan olayları kapsamakla birlikte siyasi olaylar kadar Mustafa Kemal'in özel yaşamına dair de ilginç enstantaneler paylaşmaktadır.</p>
+              <div>
+                <span class="price fw-bold fs-5">118,60₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">130₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('bozkurt', 'Bozkurt', 118.60, 'images/bozkurt.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="bilimTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/tüfek_mikrop_çelik.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Jared Diamond</span><br>
+                <span class="fs-5 fw-bold">Tüfek, Mikrop ve Çelik</span><br>
+              </div>
+              <span style="color: gray;">Bilim Tarihi</span>
+              <p class="book_description">Bu kitap tüm kıtalardaki insanların on üç bin yıllık kısa tarihi. Herkes ve her şey anlatılıyor. Farklı kıtalardaki farklı toplumların farklı gelişmelerini ikna edici ve bilimsel bir şekilde açıklayarak ırkçı yaklaşımları yerle bir ediyor. İlk iki sayfayı okuduktan sonra elinizden bırakamayacaksınız.</p>
+              <div>
+                <span class="price fw-bold fs-5">192₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;"></span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('tufek_mikrop_celik', 'Tüfek, Mikrop ve Çelik', 192, 'images/tüfek_mikrop_çelik.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/devleti_aliyye_5.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Devlet-i Aliyye - V</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Osmanlı Devleti'nin kuruluş devrinin, hukuki ve idari teşkilatının, ekonomik, sosyal ve toplumsal altyapısının detaylı olarak işlendiği Devlet-i 'Aliyye külliyatının beşinci cildi, Osmanlı-Avrupa ilişkileri, Annales Okulu ve bu okulun Osmanlı tarih araştırmalarına etkisiyle sonlanıyor.</p>
+              <div>
+                <span class="price fw-bold fs-5">98₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">98,90₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('devlet_aliyye_v', 'Devlet-i Aliyye - V', 98, 'images/devleti_aliyye_5.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="dunyaTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/cengizhan.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Javk Weatherford</span><br>
+                <span class="fs-5 fw-bold">Cengiz Han</span><br>
+              </div>
+              <span style="color: gray;">Dünya Tarihi</span>
+              <p class="book_description">YAŞAMININ TÜM YÖNLERİYLE CENGİZ HAN VE OĞULLARI.</p>
+              <div>
+                <span class="price fw-bold fs-5">86₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">100₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('cengiz_han', 'Cengiz Han', 86, 'images/cengizhan.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="bilimTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/sapiens.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Yuval Noah Harari</span><br>
+                <span class="fs-5 fw-bold">Hayvanlardan Tanrılara - Sapiens</span><br>
+              </div>
+              <span style="color: gray;">Bilim Tarihi</span>
+              <p class="book_description">İsrailli Yazar ve Tarih Profesörü Yuval Noah Harari’nin kaleme aldığı Hayvanlardan Tanrılara Sapiens, son yılların en çok ses getiren kitapları arasında yer alıyor. Başlangıçtan bugüne insanın tarihsel yolculuğunu ele alan eser, bugünü meydana getiren tüm koşulları fenni ve sosyal bilimler ışığında detaylandırıyor.</p>
+              <div>
+                <span class="price fw-bold fs-5">150₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;"></span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('sapiens', 'Hayvanlardan Tanrılara - Sapiens', 150, 'images/sapiens.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="dunyaTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/julius_caesar.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Philip Freeman</span><br>
+                <span class="fs-5 fw-bold">Julius Caesar</span><br>
+              </div>
+              <span style="color: gray;">Dünya Tarihi</span>
+              <p class="book_description">Kahramanlık ve Canilik Arasında Tarihi Bir Efsane: Caesar.</p>
+              <div>
+                <span class="price fw-bold fs-5">116₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">125₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('julius_caesar', 'Julius Caesar', 116, 'images/julius_caesar.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/türk_tarihi2.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">İlber Ortaylı</span><br>
+                <span class="fs-5 fw-bold">Türklerin Tarihi II</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Türkler tarihin her safhasında görünen, tarihi inşa eden kavimlerden biridir. Bugünkü medeni dünyada hiçbir eski dünya kavmi ve ülke yoktur ki Türkler olmadan tarihini yazabilsin. Mutlaka, Türkleri ve Türk tarihini bilmek zorundadır ki kendi tarihini anlayabilsin.</p>
+              <div>
+                <span class="price fw-bold fs-5">66₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">80₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('turklerin_tarihi_ii', 'Türklerin Tarihi II', 66, 'images/türk_tarihi2.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="bilimTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/türlerin_kökeni.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Charles Darwin</span><br>
+                <span class="fs-5 fw-bold">Türlerin Kökeni</span><br>
+              </div>
+              <span style="color: gray;">Bilim Tarihi</span>
+              <p class="book_description">Darwin'in 20 yıllık araştırması sonucu ortaya çıkan ve evrimin mekanizmalarını açıklayan Türlerin Kökeni sadece biyoloji bilimlerinin değil, aynı zamanda tüm doğa bilimlerine ve edebiyattan felsefeye tüm insanlık kültürüne yeni bir bakış kazandırarak, insanın dünyayı anlama macerasında bir dönüm noktası oldu.</p>
+              <div>
+                <span class="price fw-bold fs-5">158.25₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">175₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('turlerin_kokeni', 'Türlerin Kökeni', 158.25, 'images/türlerin_kökeni.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/devleti_aliyye_3.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Halil İnalcık</span><br>
+                <span class="fs-5 fw-bold">Devlet-i Aliyye - III</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">Üçüncü cilt ise merkezi devlet otoritesinin yeniden kurulduğu Köprülüler dönemini, Orta- Avrupa'da Habsburglarla süren uzun iktidar mücadelesini, mali ve siyasi bunalıma karşı çözüm arayışlarını ayrıntılarıyla ele alır.</p>
+              <div>
+                <span class="price fw-bold fs-5">65₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">75₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('devlet_aliyye_iii', 'Devlet-i Aliyye - III', 65, 'images/devleti_aliyye_3.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="row book_kart" data-category="turkTarihi">
+            <div class="col-6">
+              <img class="img-fluid shadow" height="300" src="images/sultan_alparslan.jpg" alt="Nutuk - Musatafa Kemal Atatürk">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="book_detail">
+                <span class="book_author fs-6">Cihan Piyadeoğlu</span><br>
+                <span class="fs-5 fw-bold">Sultan Alp Arslan: Fethin Babası</span><br>
+              </div>
+              <span style="color: gray;">Türk Tarihi</span>
+              <p class="book_description">"Cend'den Maveraünnehir'e, Harizm'den Horasan'a, İran'dan Anadolu'ya hakimiyetlerini doğu ile batı arasında birleştirmiş ilk devlet. Bu coğrafyada bizleri kalıcı kılan fikirlerin kaynağı, Anadolu'nun Türkleşmesinden cumhuriyetimizin kuruluşuna kadar gelen yolun başı: Selçuklular.</p>
+              <div>
+                <span class="price fw-bold fs-5">74₺</span>
+                <span class="text-decoration-line-through fs-5" style="color: gray;">75₺</span>
+              </div>
+              <button class="btn_store" onclick="addToBasket('sultan_alparslan', 'Sultan Alp Arslan: Fethin Babası', 74, 'images/sultan_alparslan.jpg')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sepet-->
+    <section>
+      <div class="basket_modal">
+        <div class="basket_items">
+            <i class="bi bi-x" onclick="toggleModel();"></i>
+            <h2 class="basket_title">Sepetim</h2>
+            <ul class="basket_list">
+            </ul>
+            <div class="basket_total">
+              <span class="fw-bold mb-3 fs-5">Total : 0</span>
+              <button id="openSurveyButton" onclick="openSurveyPopup()">Ödemeye Geç</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="surveyPopup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="closeSurveyPopup()">&times;</span>
+          <form id="surveyForm">
+
+              <label for="address">Teslimat Adresiniz:</label>
+              <input class="teslimatAdresi" type="text" id="address" name="address" placeholder="Teslimat Adresiniz">
+
+              <label class="soruAnket" for="satisfaction">Sitemizde gezinirken yaşadığınız deneyimi değerlendirin.</label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+
+              <label class="soruAnket" for="satisfaction">Zaman Tüneli'nin sunduğu tarih kitapları çeşitliliğini nasıl buldunuz?</label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+
+              <label class="soruAnket" for="satisfaction">Web sitemizin kullanıcı dostu olduğunu düşünüyor musunuz?</label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+
+              <label class="soruAnket" for="satisfaction">Sipariş sürecindeki hız ve güvenlikten memnun musunuz? </label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                <option value="very-satisfied">Çok İyi</option>
+                <option value="satisfied">İyi</option>
+                <option value="neutral">Orta</option>
+                <option value="dissatisfied">Kötü</option>
+                <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+
+              <label class="soruAnket" for="satisfaction">Müşteri hizmetleri ile iletişim kurma sürecini değerlendirin.</label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                  <option value="very-satisfied">Çok İyi</option>
+                  <option value="satisfied">İyi</option>
+                  <option value="neutral">Orta</option>
+                  <option value="dissatisfied">Kötü</option>
+                  <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+              
+              <label class="soruAnket" for="satisfaction">Siparişlerinizin zamanında ve güvenli bir şekilde size ulaştığını düşünüyor musunuz?</label>
+              <select class="secenekler" id="satisfaction" name="satisfaction">
+                  <option value="very-satisfied">Çok İyi</option>
+                  <option value="satisfied">İyi</option>
+                  <option value="neutral">Orta</option>
+                  <option value="dissatisfied">Kötü</option>
+                  <option value="very-dissatisfied">Çok Kötü</option>
+              </select>
+
+              <label for="address">Öneriniz.</label>
+              <input class="oneri" type="text" id="address" name="address" placeholder="Öneriniz." col="15" row="4">
+
+              <input class="sub-btn-anket" type="submit" value="Tamamla" onclick="clearBasket()">
+          </form>
+      </div>
+  </div>
+
+  <div id="thanksPopup" class="popup" style="display: none;">
+      <div class="popup-content">
+          <span class="close" onclick="closeThanksPopup()">&times;</span>
+          <p>Alışverişiniz ve Ankete Katılımınız İçin Teşekkürler.</p>
+      </div>
+  </div>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main" id="Footer">
+        <div class="tag">
+            <img src="images/Logo1.jpg">
+            <p>
+              Merhaba! Zaman Tüneli olarak, geçmişin derinliklerine doğru bir yolculuğa çıkma arzusu taşıyan herkesi karşılamaktan mutluluk duyuyoruz.
+              Amacımız, tarihin zengin ve karmaşık dokusunu sizlere en etkileyici şekilde sunarak, geçmişin izlerini sürdürenleri bir araya getirmektir.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h1>Hızlı Erişim</h1>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="#Featured">Öne Çıkanlar</a>
+            <a href="urunler.html">Ürünler</a> 
+            <a href="sss.html">Sıkça Sorulan Sorular</a> 
+        </div>
+
+        <div class="tag">
+            <h1>İletişim Bilgileri</h1>
+            <a href="ıletisim.html"><i class="fa-solid fa-phone"></i>+90 123 456 7890</a>
+            <a href="ıletisim.html"><i class="fa-solid fa-phone"></i>+90 124 567 8930</a>
+            <a href="ıletisim.html"><i class="fa-solid fa-envelope"></i>zamantuneli@gmail.com</a>  
+        </div>
+
+        <div class="tag">
+            <h1>Bizi Takip Edin</h1>
+            <div class="social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>          
+        </div>
+        <p class="end">Furkan Kılıçsokan tarafından yapıldı.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

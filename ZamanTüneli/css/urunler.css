@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*Navbar*/
+nav{
+    background-color: #F1E3C6;
+    height: 15%;
+}
+nav .logo-nav{
+    height: 5rem;
+}
+
+.navbar .navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+nav .nav-item .nav-link:hover{
+    color: #bca37f;
+    font-size: large;
+}
+
+nav .social_icon i{
+    margin: 0 0.3rem;
+    font-size: 1.1rem;
+}
+
+nav .social_icon i:hover{
+    color: #bca37f;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav .social_icon li{
+    position: relative;
+    list-style: none;
+    display: inline;
+}
+
+nav .collapse{
+    background-color: #F1E3C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+@media (max-width: 990px){
+    nav .social_icon li{
+        display: block;
+        margin-right: 5rem;
+    }
+}
+
+/*Store*/
+.store{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 154px;
+}
+
+.book_kart{
+    height: 300px;
+    margin-bottom: 150px;
+    z-index: 1;
+}
+
+.book_author{
+    color: gray;
+}
+
+.book_star_rate .bi-star,
+.bi-star-fill{
+    color: #eeedf5;
+    font-size: 1.1rem;
+    margin-right: 3px;
+}
+
+.book_star_rate .bi-star-fill.active{
+    color: #bca37f;
+}
+
+.book_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+
+.btn_store{
+    cursor: pointer;
+    border: 2px solid #4F6F52;
+    color: #4F6F52;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    transition: all 250ms ease-in-out;
+}
+
+.btn_store:hover{
+    background-color: #4F6F52;
+    color: white;
+}
+
+/*Sepet*/
+.basket_modal{
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background-color: #80808050;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 250ms ease-in-out;
+}
+
+.basket_modal.active{
+    opacity: 1;
+    z-index: 2000;
+}
+
+.basket_items{
+    position: relative;
+    width: 0px;
+    background-color: #F1E3C6;
+    height: 100%;
+    float: right;
+    transition: all 250ms ease-in-out;
+}
+
+.basket_modal.active .basket_items{
+    width: 350px;
+}
+
+.basket_items .bi-x{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.basket_items .basket_title{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dark .basket_items .basket_title{
+    color: #000;
+}
+
+.basket_list{
+    list-style: none;
+    padding: 0 10px;
+    margin-top: 1.5rem;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.basket_list .basket_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.basket_items_info{
+    width: 150px;
+}
+
+.basket_items_info .book_name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dark .basket_items_info .book_name{
+    color: #000;
+}
+
+.basket_items_info .basket_price{
+    font-size: 16px;
+}
+
+.dark .basket_items_info .basket_price{
+    color: #000;
+}
+
+.basket_items_info .book_remove{
+    cursor: pointer;
+    color: gray;
+}
+
+.basket_item .book_count{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dark .basket_item .book_count .number_of_books{
+    color: #000;
+}
+
+.book_count .increase{
+    margin-right: 5px;
+}
+
+.book_count .decrease{
+    margin-left: 5px;
+}
+
+.book_count .increase, .decrease{
+    cursor: pointer;
+    color: #2c86a5;
+}
+
+.basket_total{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    align-items: center;
+    width: inherit;
+}
+
+.dark .basket_total{
+    color: #000;
+}
+
+.basket_total button{
+    width: 250px;
+    padding: 2px 20px;
+    border: 2px solid #bca37f;
+    text-decoration: none;
+    color: #000;
+}
+
+.dark .basket_total button{
+    color: white;
+    background-color: #000;
+}
+
+.basket_total button:hover{
+    background-color: #bca37f;
+}
+
+/*Anket*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2001;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F1E3C6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.popup .popup-content label{
+    display: block;
+}
+
+.soruAnket{
+    display: block;
+}
+
+.secenekler{
+    border-radius: 10px;
+    text-align: center;
+}
+
+.oneri{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+
+.teslimatAdresi{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sub-btn-anket{
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    background: #F1E3C6;
+    margin-top: 50px
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag i:hover{
+    color: #bca37f;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #113946;
+    margin-bottom: -16px;
+}
+
+@media (max-width: 1000px) {
+    footer{
+        width: 100%;
+        background: #F1E3C6;
+        margin-top: 1rem;
+    }
+    
+    footer .footer_main{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    
+    footer .footer_main .tag{
+        margin: 10px 0; 
+        text-align: center;
+        
+    }
+    
+    footer .footer_main .tag img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    footer .footer_main .tag p{
+        width: 15rem;
+        line-height: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
